@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FSKIK Student Lecturer Appointment System</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="CSS/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div style="margin-top: 4%">
+      <img src="images/banner.png" alt="banner" width="100%" />
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <a class="navbar-brand" href="#home">FSKIK Appointment System</a
+      ><button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navcol-1"
+      >
+        <span class="sr-only">Toggle navigation</span
+        ><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <div class="collapse navbar-collapse tabbable" id="navbarNavDropdown">
+          <ul class="navbar-nav nav nav-tabs">
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#department"
+                >Department</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <span class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle btn btn-light action-button"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Log In
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a
+                class="dropdown-item"
+                target="_parent"
+                href="student/studentlogin.php"
+                >Student Login</a
+              >
+              <a
+                class="dropdown-item"
+                target="_parent"
+                href="lecturer/lecturerlogin.php"
+                >Lecturer Login</a
+              >
+              <a
+                class="dropdown-item"
+                target="_parent"
+                href="admin/adminlogin.php"
+                >Admin Login</a
+              >
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="tab-content" style="margin-top: 4%; margin-bottom: 40%">
+        <div class="tab-pane active" id="home">
+          <h3>About the Faculty</h3>
+          <p class="text-justify">
+            On September 15th, 2009, UPSI Senate had approved a proposal on
+            restructuring faculties at Sultan Idris Educational University with
+            a goal to customize the academic program and field of study offered
+            by faculty in accordance with latest developments and nation
+            requirements. The faculty and department involved in the
+            restructuring process were Faculty of Information Technology and
+            Communication and Department of Art (from Faculty of Art and Music).
+            The combination creates a new faculty named Faculty of Art,
+            Computing and Creative Industry.
+            <br /><br />
+            Faculty of Art, Computing and Creative Industry (FSKIK) was
+            established on June 1st, 2010. The faculty has three departments
+            i.e. the Department of Art and Design, Department of Computing, and
+            Department of Creative Multimedia. Various programs from diploma
+            level, undergraduate, graduate and doctoral degree are offered by
+            FSKIK to meet the needs of creative Industries which provides
+            graduates with arts and computing knowledge, skills and abilities
+            either in the field of education or for creative Industries
+            worldwide.
+          </p>
+          <br /><br />
+          <h3>Vision</h3>
+          <p class="text-justify">Manifesting Collaborative Creativity</p>
+          <br /><br />
+          <h3>Mission</h3>
+          <p class="text-justify">
+            To produce individuals who are competent, knowledgeable, skilled,
+            competent, creative, and innovative in generating and fostering art,
+            computing, and creative industy fields.
+          </p>
+        </div>
+        <div class="tab-pane" id="department">
+          <h3>Computing Department</h3>
+
+          <ul>
+            <li>
+              Bachelor of Education (Information Technology) with Honours (AT20)
+            </li>
+            <li>Bachelor of Education (Multimedia) with Honours (AT46)</li>
+            <li>
+              Bachelor of Education (Computer-Aided Design Technology) with
+              Honours (AT47)
+            </li>
+            <li>
+              Bachelor of Software Engineering (Educational Software) with
+              Honours (AC10)
+            </li>
+          </ul>
+          <br /><br />
+          <h3>Creative Multimedia Department</h3>
+
+          <ul>
+            <li>Bachelor of Design (Advertising) with Honours (AH16)</li>
+            <li>Bachelor of Design (Animation) with Honours (AH17)</li>
+            <li>Bachelor of Design (Digital Games ) with Honours (AC33)</li>
+          </ul>
+          <br /><br />
+          <h3>Art and Design Department</h3>
+
+          <ul>
+            <li>Bachelor of Education (Art) with Honours (AT23)</li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="contact">
+          <div class="container">
+            <form action="message.php" method="post">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write something.."
+                style="height: 200px"
+                required
+              ></textarea>
+              <input type="submit" name="submit" value="Submit" />
+            </form>
+        </div>
+      </section>
+    </div>
+  </body>
+  <nav class="bg-dark text-center text-white">
+    <p>
+      &#169; 2021 Copyright: MTD3063 Database Driven Web Programming <br />
+      Faculty of Art, Computing and Creative Industry.
+    </p>
+  </nav>
+</html>
+<style>
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>

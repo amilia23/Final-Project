@@ -83,7 +83,7 @@ include('dashboard.php'); ?>
                         <td><?php echo $reason ?></td>
                         <td><?php echo $platform; ?></td>
 						<td><?php echo $status2; ?>
-				<td><button title="Delete" type="button" class="btn btn-danger" aria-label="Left Align" onclick="location.href='delete.php?id=<?php echo $row['id']?>'">
+				<td><button title="Delete" type="button" class="btn btn-danger" aria-label="Left Align" onclick="location.href='deleteappointment.php?id=<?php echo $row['id']?>'">
 					<i class="fas fa-trash-alt" aria-label="true"></i>
 				</button>
 			    </td>
